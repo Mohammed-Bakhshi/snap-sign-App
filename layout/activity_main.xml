@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/baliLandingPageImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Bali Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/capriLandingPageImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/bali_landing_page" />
+
+    <ImageView
+        android:id="@+id/capriLandingPageImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Capri Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/baliLandingPageImageView"
+        app:layout_constraintEnd_toStartOf="@+id/scandiLandingPageImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/capri_landing_page" />
+
+    <ImageView
+        android:id="@+id/scandiLandingPageImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Scandi Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capriLandingPageImageView"
+        app:layout_constraintEnd_toStartOf="@+id/slateLandingPageImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/scandi_landing_page" />
+
+    <ImageView
+        android:id="@+id/slateLandingPageImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Slate Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scandiLandingPageImageView"
+        app:layout_constraintEnd_toStartOf="@+id/auraLandingPageImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/slate_landing_page" />
+
+    <TextView
+        android:id="@+id/customFontTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/nickainley_normal"
+        app:layout_constraintTop_toBottomOf="@+id/normalImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/customFontTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/porcelain"
+        app:layout_constraintTop_toBottomOf="@+id/normalImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/auraLandingPageImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Aura Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slateLandingPageImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/aura_landing_page" />
+
+    <ImageView
+        android:id="@+id/normalImageView"
+        android:layout_width="398dp"
+        android:layout_height="0dp"
+        android:contentDescription="Landing Page Image"
+        app:layout_constraintBottom_toTopOf="@+id/startEventImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/landingscreenbg"
+        tools:layout_editor_absoluteX="6dp" />
+
+    <ImageView
+        android:id="@+id/startEventImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Start Event Image"
+        app:layout_constraintTop_toBottomOf="@+id/normalImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/start_event" />
+
+    <ImageView
+        android:id="@+id/dateIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Date Icon Image"
+        app:layout_constraintTop_toBottomOf="@+id/startEventImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/date_icon" />
+
+    <ImageView
+        android:id="@+id/backgroundImageIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Background Image Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/background_image_icon" />
+
+    <ImageView
+        android:id="@+id/titleIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Title Icon Image"
+        app:layout_constraintTop_toBottomOf="@+id/startEventImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/title_icon" />
+
+    <TextView
+        android:id="@+id/customFontTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Event Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/normalImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/customFontTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Event Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/feltpen_"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/blueBackgroundIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Blue Background Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/blue_background_icon" />
+
+    <ImageView
+        android:id="@+id/backButtonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Back Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/pictureFrameImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Picture Frame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/picture_frame" />
+
+    <ImageView
+        android:id="@+id/baliScreenBgImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Bali Screen Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/capriScreenBgImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/landingscreenbgbali" />
+
+    <ImageView
+        android:id="@+id/capriScreenBgImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Capri Screen Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/baliScreenBgImageView"
+        app:layout_constraintEnd_toStartOf="@+id/scandiScreenBgImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/landingscreenbgcapri" />
+
+    <ImageView
+        android:id="@+id/scandiScreenBgImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Scandi Screen Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capriScreenBgImageView"
+        app:layout_constraintEnd_toStartOf="@+id/slateScreenBgImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/landingscreenbgslate" />
+
+    <ImageView
+        android:id="@+id/slateScreenBgImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Slate Screen Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scandiScreenBgImageView"
+        app:layout_constraintEnd_toStartOf="@+id/auraScreenBgImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/landingscreenbgslate" />
+
+    <ImageView
+        android:id="@+id/auraScreenBgImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Aura Screen Background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/slateScreenBgImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/landingscreenbgaura" />
+
+    <ImageView
+        android:id="@+id/blueTitleIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Blue Title Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/blue_title_icon" />
+
+    <ImageView
+        android:id="@+id/font_arapey_your_event_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Bali Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/font_linotype_feltpen_your_eventy_name"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/font_arapey_your_event_name" />
+
+    <ImageView
+        android:id="@+id/font_linotype_feltpen_your_eventy_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Capri Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/font_arapey_your_event_name"
+        app:layout_constraintEnd_toStartOf="@+id/font_nickainley_your_event_name"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/font_linotype_feltpen_your_eventy_name" />
+
+    <ImageView
+        android:id="@+id/font_nickainley_your_event_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Scandi Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/font_linotype_feltpen_your_eventy_name"
+        app:layout_constraintEnd_toStartOf="@+id/font_pinyon_script_your_event_name"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/font_nickainley_your_event_name" />
+
+    <ImageView
+        android:id="@+id/font_pinyon_script_your_event_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Slate Landing Page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/font_nickainley_your_event_name"
+        app:layout_constraintEnd_toStartOf="@+id/font_arapey_your_event_name"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/font_pinyon_script_your_event_name" />
+
+    <ImageView
+        android:id="@+id/blueDateIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Blue Date Icon Image"
+        app:layout_constraintTop_toBottomOf="@+id/startEventImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/blue_date_icon" />
+
+    <TextView
+        android:id="@+id/blackmango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Text Here"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/blackmango"
+        app:layout_constraintTop_toBottomOf="@+id/normalImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/dateFontArapeyImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Date Font Arapey"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dateFontBlackMangoImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/date_font_arapey" />
+
+    <ImageView
+        android:id="@+id/dateFontBlackMangoImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Date Font Black Mango"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateFontArapeyImageView"
+        app:layout_constraintEnd_toStartOf="@+id/dateFontLinotypeFeltpenImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/date_font_black_mango" />
+
+    <ImageView
+        android:id="@+id/dateFontLinotypeFeltpenImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Date Font Linotype Feltpen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateFontBlackMangoImageView"
+        app:layout_constraintEnd_toStartOf="@+id/dateFontNickainleyImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/date_font_linotype_feltpen" />
+
+    <ImageView
+        android:id="@+id/dateFontNickainleyImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Date Font Nickainley"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateFontLinotypeFeltpenImageView"
+        app:layout_constraintEnd_toStartOf="@+id/dateFontPinyonScriptImageView"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/date_font_nickainley" />
+
+    <ImageView
+        android:id="@+id/dateFontPinyonScriptImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Date Font Pinyon Script"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateFontNickainleyImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/normalImageView"
+        app:srcCompat="@drawable/date_font_pinyon_script" />
+
+    <Button
+        android:id="@+id/takeSelfieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Selfie"
+        app:layout_constraintTop_toBottomOf="@+id/startEventImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:onClick="onTakeSelfieClick" />
+    <ImageView
+        android:id="@+id/bookPageImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/book_page_two"
+        app:layout_constraintTop_toBottomOf="@+id/takeSelfieButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="Book Page" />
+</androidx.constraintlayout.widget.ConstraintLayout>
